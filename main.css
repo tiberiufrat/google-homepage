@@ -18,6 +18,11 @@ body, html {
     overflow: hidden;
 }
 
+body {
+    margin: 0;
+    padding: 8px;
+}
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -32,17 +37,108 @@ li {
 
 #search {
     margin-top: 2vh;
-    width: 45%;
-    height: 2em;
+    width: 60vw;
+    max-width: 600px;
+    height: 3.5em;
     border-radius: 1000px;
 }
 
 #footer {
     position: absolute;
     bottom: 0;
-    margin-bottom: 10px;
+    padding-bottom: 10px;
+    margin-left: -100px;
+    padding-left: 100px;
+    padding-top: 10px;
+    width: 100%;
+    background-color: #e0e0e0;;
+}
+
+#footer ul {
+    padding-top: .7em;
+}
+
+a {
+    text-decoration: none;
+    color: grey;
+}
+
+a.lang {
+    text-decoration: underline;
+    color: dodgerblue;
+}
+
+p, a, button, span {
+    font-family: Geneva, Arial, sans-serif;
+    font-size: 14px;
 }
 
 #topbar {
     margin-bottom: 1vh;
+    margin-left: auto;
+    margin-right: 0;
+    width: fit-content;
+}
+
+#buttons {
+    padding: 2.5vh;
+}
+
+#buttons button {
+    font-size: smaller;
+    background-color: #efefef;
+    padding: 10px;
+    margin-right: 4px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: white;
+}
+
+#buttons button:hover {
+    border-color: inherit;
+}
+
+#country {
+    margin-left: -100px;
+    padding-left: calc( 100px + 0.7em);
+    padding-bottom: .7em;
+    padding-top: .2em;
+    width: 100%;
+    border-bottom-style: solid;
+    border-width: 1px;
+    border-color: grey;
+}
+
+#footer-links ul {
+    display: inline;
+    padding-right: 1vw;
+}
+
+@media (min-width: 770px) {
+    .right {
+        float: right;
+    }
+
+    .left {
+        float: left;
+    }
+}
+
+@media (max-width: 330px) {
+    body {
+        padding: 6vw;
+    }
+
+    #Google-logo, #search {
+        width: 100%;
+    }
+
+    #buttons {
+        text-align: center;
+    }
+
+    #buttons button {
+        width: 60vw;
+        margin-bottom: 2vw;
+    }
 }
