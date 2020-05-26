@@ -1,0 +1,22 @@
+#logo-search {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+li {
+    display: inline;
+    padding: 0.7em;
+}
+
+#topbar {
+
+}
