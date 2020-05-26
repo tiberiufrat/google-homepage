@@ -3,6 +3,19 @@
     flex-direction: column;
     justify-items: center;
     align-items: center;
+    padding-bottom: 40vh;
+}
+
+#logo-search-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+body, html {
+    height: 100%;
+    overflow: hidden;
 }
 
 ul {
@@ -17,6 +30,19 @@ li {
     padding: 0.7em;
 }
 
-#topbar {
+#search {
+    margin-top: 2vh;
+    width: 45%;
+    height: 2em;
+    border-radius: 1000px;
+}
 
+#footer {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 10px;
+}
+
+#topbar {
+    margin-bottom: 1vh;
 }
